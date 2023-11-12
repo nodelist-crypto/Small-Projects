@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #153677, #4e085f);
+  padding: 10px;
+}
+
+.to-do-box {
+  width: 100%;
+  max-width: 540px;
+  margin: 100px auto 20px;
+  background: #fff;
+  padding: 40px 30px 70px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+
+.to-do-box h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  font-size: 20px;
+  font-weight: bold;
+  color: #002765;
+}
+
+.to-do-box h1 img {
+  width: 30px;
+  height: 25px;
+  margin-left: 10px;
+}
+.inputArea {
+  display: flex;
+  justify-content: space-between;
+  background-color: #edeef0;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.inputArea #text-input {
+  flex: 1;
+  outline: none;
+  border: none;
+  background: transparent;
+  padding: 15px 10px;
+}
+.inputArea .btn {
+  background: #ff5945;
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 10px 40px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+ul .task {
+  display: flex;
+  flex-direction: row;
+}
+
+ul li {
+  list-style: none;
+  font-size: 17px;
+  user-select: none;
+  cursor: pointer;
+  padding: 12px 10px 12px 50px;
+  margin: 0px 20px;
+  position: relative;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url("images/unchecked.png");
+  background-size: cover;
+  top: 10px;
+  left: 8px;
+}
+
+#task .checked {
+  color: #555;
+  text-decoration: line-through;
+}
+
+#task .checked::before {
+  background-image: url("images/checked.png");
+}
+
+#task span {
+  position: relative;
+  float: right;
+  padding: 10px 15px;
+  border-radius: 50px;
+}
+
+#task span:hover {
+  background-color: #d0d8e0;
+}
+.clearSection {
+  position: relative;
+  margin: 50px 30px
+}
+
+.clearbtn {
+  background: rgb(20, 197, 126);
+  position: absolute;
+  top: 70%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  
+}
