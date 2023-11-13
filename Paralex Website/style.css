@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "lupio", sans-serif;
+  font-weight: 100px;
+}
+
+.part {
+  background-image: url(images/image3.jpg);
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.part-1 {
+  background-image: url(images/image2.jpg);
+}
+
+.part-2 {
+  background-image: url(images/image3.jpg);
+  min-height: 400px;
+}
+
+.part-3 {
+  background-image: url(images/image1.jpg);
+  min-height: 400px;
+}
+.part-4 {
+  background-image: url(images/image4.jpg);
+}
+.heading-backround {
+  top: 50%;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.heading {
+  background-color: #1e2127;
+  color: aliceblue;
+  padding: 20px;
+  font-size: 30px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+.para {
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+  color: rgb(158, 166, 174);
+  font-size: 30px;
+}
+.para-light {
+  background-color: rgb(227, 236, 244);
+}
+
+.para-dark {
+  background-color: #1e2127;
+}
+
+.paragraph {
+  margin: 20px 100px;
+  font-size: 13px;
+  color: rgb(157, 167, 173);
+}
+
+@media (max-width: 786px) {
+  body {
+    min-width: 50vh;
+  }
+  .heading {
+    font-size: 15px;
+    margin: 0px auto;
+    line-height: 70px;
+  }
+
+  .para-heading {
+    font-size: 20px;
+  }
+  .heading-backround {
+    top: 40%;
+  }
+  .paragraph {
+    margin: 20px 30px;
+  }
+
+  .part-2 {
+    min-height: 500px;
+  }
+
+  .part-3 {
+    min-height: 500px;
+  }
+}
